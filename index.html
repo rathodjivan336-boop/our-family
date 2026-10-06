@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Family ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts"></div>
+
+  <nav>
+    <div class="logo">Our Family ❤️</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#family">Family</a>
+      <a href="#memories">Memories</a>
+      <a href="#music">Music</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <img src="images/family.jpg" alt="Our Family" class="hero-photo">
+      <div class="hero-content">
+        <p class="small-title">A little place for our biggest memories</p>
+        <h1>Our Family <span>❤️</span></h1>
+        <p class="quote">“Some families are made by blood, but ours is made by love.”</p>
+        <a href="#family" class="btn">Enter Our Memories ✨</a>
+      </div>
+      <button class="sound-btn" id="soundBtn">🔊 Music</button>
+    </section>
+
+    <section id="family" class="section">
+      <p class="eyebrow">THE PEOPLE WHO MATTER MOST</p>
+      <h2>Our Family</h2>
+
+      <div class="cards">
+        <article class="card papa">
+          <div class="card-photo"><img src="images/papa.jpg" alt="Papa"></div>
+          <div class="card-body">
+            <span class="tag">👨 Papa</span>
+            <h3>Our Strength ❤️</h3>
+            <p>Papa — the strength, protection and support of our family.</p>
+            <button class="memory-btn" data-title="Papa — Our Strength ❤️"
+              data-text="Thank you for always standing strong for our family.">Open Memory</button>
+          </div>
+        </article>
+
+        <article class="card mumma special">
+          <div class="special-badge">SPECIAL ❤️</div>
+          <div class="card-photo"><img src="images/mumma.jpg" alt="Mumma"></div>
+          <div class="card-body">
+            <span class="tag">👩 Mumma</span>
+            <h3>The Heart of Our Family ❤️</h3>
+            <p>Mumma — love, care and warmth that makes our family complete.</p>
+            <button class="memory-btn" data-title="Mumma — The Heart of Our Family ❤️"
+              data-text="Mumma, your love makes every moment feel like home. You are truly special.">Open Memory</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-photo"><img src="images/sister1.jpg" alt="Khusi"></div>
+          <div class="card-body">
+            <span class="tag">👧 sister 1</span>
+            <h3>Sweet Memories ✨</h3>
+            <p>A special place in our family story.</p>
+            <button class="memory-btn" data-title="sister 1 — Sweet Memories ✨" data-text="Every family needs memories like these.">Open Memory</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-photo"><img src="images/sister2.jpg" alt="Sakshi"></div>
+          <div class="card-body">
+            <span class="tag">👧 sister 2</span>
+            <h3>Beautiful Moments ✨</h3>
+            <p>Another beautiful chapter of our family.</p>
+            <button class="memory-btn" data-title="sister 2 — Beautiful Moments ✨" data-text="Keep smiling and keep making beautiful memories.">Open Memory</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-photo"><img src="images/sister3.jpg" alt="Tanushree"></div>
+          <div class="card-body">
+            <span class="tag">👧 sister 3</span>
+            <h3>Forever Family ✨</h3>
+            <p>Because every sister makes the family more special.</p>
+            <button class="memory-btn" data-title="sister 3 — Forever Family ✨" data-text="Family is better when we have moments to remember together.">Open Memory</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="memories" class="section dark-section">
+      <p class="eyebrow">OUR STORY</p>
+      <h2>Family Memories 📸</h2>
+      <p class="section-note">Abhi family photo yahan hai. Baad mein aur photos <b>images</b> folder mein add kar sakte ho.</p>
+      <div class="gallery">
+        <div class="gallery-item"><img src="images/family.jpg" alt="Family memory"><span>Our Family ❤️</span></div>
+      </div>
+    </section>
+
+    <section id="music" class="section music-section">
+      <p class="eyebrow">OUR SOUNDTRACK</p>
+      <h2>Music 🎵</h2>
+      <p class="section-note">Apne MP3 files <b>music</b> folder mein rakho. Neeche names ko apne song filenames se replace kar dena.</p>
+
+      <div class="music-box">
+        <div class="now-playing" id="nowPlaying">Select a memory song 🎶</div>
+        <audio id="audio" controls></audio>
+        <div class="song-buttons">
+          <button class="song-btn" data-song="music/mumma.mp3" data-name="Mumma ❤️">Mumma ❤️</button>
+          <button class="song-btn" data-song="music/papa.mp3" data-name="Papa ❤️">Papa ❤️</button>
+          <button class="song-btn" data-song="music/sister1.mp3" data-name="Kushi ❤️">Kushi ❤️</button>
+          <button class="song-btn" data-song="music/sister2.mp3" data-name="Tanushree ❤️">Tanushree ❤️</button>
+          <button class="song-btn" data-song="music/sister3.mp3" data-name="Sakshi ❤️">Sakshi ❤️</button>
+          <button class="song-btn" data-song="music/family.mp3" data-name="Family ❤️">Family ❤️</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Made with ❤️ for our family
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-card">
+      <button class="close" id="closeModal">×</button>
+      <div class="modal-heart">❤️</div>
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
